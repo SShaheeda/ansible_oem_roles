@@ -1,0 +1,9 @@
+---
+# tasks file for oem_prj
+- name: Copy file with node2 and node1
+  copy:
+    src: firstfile.txt
+    dest: /var/tmp/node1.txt
+    owner: vagrant
+    group: vagrant
+    mode: '0744'

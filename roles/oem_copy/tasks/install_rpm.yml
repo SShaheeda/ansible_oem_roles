@@ -1,0 +1,7 @@
+---
+# installing yum
+- name: Install the latest version of Apache
+  yum:
+    name: unzip
+    state: latest
+  become: True

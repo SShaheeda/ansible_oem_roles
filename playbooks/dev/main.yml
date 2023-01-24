@@ -1,0 +1,7 @@
+---
+- hosts: node_servers
+  vars_files:
+    - "../../group_vars/dev/main.yml"
+  roles:
+    - {role: oem_copy, when: oem_copy | bool}
+#    - {role: ../../roles/oem_copy, when: oem_copy | bool}

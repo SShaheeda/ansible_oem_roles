@@ -1,0 +1,5 @@
+---
+# tasks file for oem_prj
+- include: copy.yml
+- include: install_rpm.yml
+- include: unzip.yml
